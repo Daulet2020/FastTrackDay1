@@ -16,13 +16,16 @@ public class AlertClass {
     //3. Click to OK button from the alert
     //4. Verify "You successfully clicked an alert" text is displayed
 
-    @FindBy(xpath = "//*[text() = \'Click for JS Alert\']")
+    @FindBy(xpath = "//*[text() = 'Click for JS Alert']")
     public WebElement clickJsAlert;
 
     @FindBy(xpath = "//*[text() = 'Click for JS Confirm']")
-    public WebElement getClickJsConfirm;
+    public WebElement clickJsConfirm;
 
     @FindBy(xpath = "//*[text() = 'Click for JS Prompt']")
     public WebElement getClickJsPrompt;
+
+    @FindBy (id = "result")
+    public WebElement result;
 
 }
