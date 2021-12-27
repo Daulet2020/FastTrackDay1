@@ -16,6 +16,7 @@ public class CheckBoxPage {
     //7. Confirm checkbox #2 is NOT selected.
 
     public CheckBoxPage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
       }
 
