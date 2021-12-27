@@ -36,4 +36,12 @@ public class DropDownPage {
     @FindBy(id = "day")
     public WebElement daySelector;
 
+    //TC#3
+    //1. Go to http://practice.cydeo.com/dropdown
+    //2. Select all the options from multiple languages select dropdown
+    //3. Print out all selected values and verify each is selected
+    //4. Deselect all values and verify each is deselected
+    @FindBy(name = "Languages")
+    public WebElement Language;
+
 }
