@@ -20,5 +20,20 @@ public class DropDownPage {
     @FindBy(id = "state")
     public WebElement stateSelector;
 
+    //TC#2
+    // Select "December 1st, 1950" and verify it is selected
+    //1. Go to http://practice.cydeo.com/dropdown
+    //2. Select Year --> select by visible text
+    //3. Select Month --> select by value
+    //4. Select Day --> select by index
+    //5. Verify final selected option is "December 1st, 1950"
+    @FindBy(id = "year")
+    public WebElement yearSelector;
+
+    @FindBy(id = "month")
+    public WebElement monthSelector;
+
+    @FindBy(id = "day")
+    public WebElement daySelector;
 
 }
