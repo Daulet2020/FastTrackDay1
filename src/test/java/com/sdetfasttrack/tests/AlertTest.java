@@ -1,6 +1,6 @@
 package com.sdetfasttrack.tests;
 
-import com.sdetfasttrack.pages.AlertClass;
+import com.sdetfasttrack.pages.AlertClassPage;
 import com.sdetfasttrack.utilities.Driver;
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class AlertTest {
 
-    AlertClass alertClass = new AlertClass();
+    AlertClassPage alertClass = new AlertClassPage();
 
    @Test
    public void alertTest() throws InterruptedException {

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AlertClass {
+public class AlertClassPage {
 
-    public AlertClass(){
+    public AlertClassPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
     //TC#3

@@ -11,7 +11,7 @@ public class IframePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    //TC#3
+    //TC#4
     //1. Go to http://practice.cydeo.com/iframe
     //2. Locate as WebElement
     //3. Pass index number
@@ -26,6 +26,9 @@ public class IframePage {
     public int iframeIndex = 0;
 
     @FindBy(xpath = "//p[.='Your content goes here.']")
-    public WebElement content;
+    public WebElement text;
+
+    @FindBy(css=".tox-tbtn__select-label")
+    public WebElement paragraph;
 
 }
