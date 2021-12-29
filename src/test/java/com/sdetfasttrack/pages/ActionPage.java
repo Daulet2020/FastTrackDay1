@@ -46,6 +46,9 @@ public class ActionPage {
     @FindBy(xpath = "//*[.='name: user3']")
     public WebElement user3;
 
+    @FindBy(id = "hot-spot")
+    public WebElement rightClick;
+
     }
 
 
