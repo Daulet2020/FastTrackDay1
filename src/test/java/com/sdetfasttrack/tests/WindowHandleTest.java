@@ -49,7 +49,7 @@ public class WindowHandleTest {
         //6 Switch back to main handle
         Driver.getDriver().switchTo().window(mainHandle);
 
-        Driver.getDriver().close();
+        Driver.getDriver().quit();
 
     }
 }
