@@ -43,7 +43,7 @@ public class WindowHandleTest {
         }
         //5 Assert: Title is "New Window"
         expTitle = "New Window";
-        actTitle=Driver.getDriver().getTitle();
+        actTitle=Driver.getDriver().getTitle(); //title of new window
         Assert.assertEquals(actTitle,expTitle,"Title not match");
 
         //6 Switch back to main handle
