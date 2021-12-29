@@ -1,6 +1,8 @@
 package com.sdetfasttrack.pages;
 
 import com.sdetfasttrack.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class WindowHandlePage {
@@ -18,6 +20,10 @@ public class WindowHandlePage {
     //5 Assert: Title is "New Window"
     //6 Switch back to main handle
 
+    @FindBy (xpath = "//a[.='Click Here']")
+    public WebElement clickHereBtn;
 
 
-}
+
+    }
+
