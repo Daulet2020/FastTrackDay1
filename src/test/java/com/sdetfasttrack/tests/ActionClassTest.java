@@ -39,10 +39,17 @@ public class ActionClassTest {
         Assert.assertTrue(actionPage.image3.isDisplayed(), "user3 not displayed");
 
         Driver.closeDriver();
+   }
 
+   @Test
+    public void actionTest2(){
 
-
-
-    }
+       //TC#2
+       //1. Go	to https://the-internet.herokuapp.com/context_menu
+       Driver.getDriver().get("https://the-internet.herokuapp.com/context_menu");
+       //2. Right click to the	box.
+       //3. Alert will open.
+       //4. Accept	alert.
+   }
 
 }
