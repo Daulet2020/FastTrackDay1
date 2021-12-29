@@ -27,10 +27,10 @@ public class WindowHandleTest {
         //3. Click to: "Click Here" text
         windowHandlePage.clickHereBtn.click();
 
-        String mainHandle = Driver.getDriver().getWindowHandle(); //define as a main window
+        String mainHandle = Driver.getDriver().getWindowHandle(); //define as a main window with the getWindowHandle
         //System.out.println("main"+mainHandle);
 
-        Set<String> windHandles = Driver.getDriver().getWindowHandles();
+        Set<String> windHandles = Driver.getDriver().getWindowHandles(); //the method of handling windows
 
         //4. Switch to new Window
         for (String eachTab:windHandles){
