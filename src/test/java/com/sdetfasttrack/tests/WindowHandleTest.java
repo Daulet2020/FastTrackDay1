@@ -27,16 +27,16 @@ public class WindowHandleTest {
         //3. Click to: "Click Here" text
         windowHandlePage.clickHereBtn.click();
 
-        String mainHandle = Driver.getDriver().getWindowHandle();
+        String mainHandle = Driver.getDriver().getWindowHandle(); //define as a main window
         //System.out.println("main"+mainHandle);
 
         Set<String> windHandles = Driver.getDriver().getWindowHandles();
 
         //4. Switch to new Window
         for (String eachTab:windHandles){
-            Driver.getDriver().switchTo().window(eachTab);
-            String title = Driver.getDriver().getTitle();
-            System.out.println(eachTab);
+            Driver.getDriver().switchTo().window(eachTab); // jump to new window
+            String title = Driver.getDriver().getTitle();  //getting title
+            //System.out.println(eachTab);
             if (title.contains("New Window")){
                 break;
             }
@@ -48,6 +48,8 @@ public class WindowHandleTest {
 
         //6 Switch back to main handle
         Driver.getDriver().switchTo().window(mainHandle);
+
+        Driver.getDriver().quit();
 
     }
 }
