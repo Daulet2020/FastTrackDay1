@@ -35,7 +35,7 @@ public class WindowHandleTest {
         //4. Switch to new Window
         for (String eachTab:windHandles){
             Driver.getDriver().switchTo().window(eachTab); // jump to new window
-            String title = Driver.getDriver().getTitle();  //getting title
+            String title = Driver.getDriver().getTitle();  //getting title of new window
             //System.out.println(eachTab);
             if (title.contains("New Window")){
                 break;
@@ -49,7 +49,7 @@ public class WindowHandleTest {
         //6 Switch back to main handle
         Driver.getDriver().switchTo().window(mainHandle);
 
-        Driver.getDriver().quit();
+        Driver.getDriver().close();
 
     }
 }
