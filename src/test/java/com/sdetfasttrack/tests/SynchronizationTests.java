@@ -53,13 +53,14 @@ public class SynchronizationTests {
 
         //2. Wait until title is “Dynamic title”
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.titleIs("Dynamic title"));
 
         //3. Assert : Message “Done” is displayed.
-        Assert.assertTrue(synchronizationPage.doneMsg.isDisplayed());
+        Assert.assertTrue(synchronizationPage.doneMsg.isDisplayed(),"Msg not displayed");
 
 
         //4. Assert : Image is displayed.
-        Assert.assertTrue(synchronizationPage.image.isDisplayed());
+        Assert.assertTrue(synchronizationPage.image.isDisplayed(),"image is not displayed");
 
     }
 }
