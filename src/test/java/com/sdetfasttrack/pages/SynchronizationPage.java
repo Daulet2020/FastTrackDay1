@@ -27,7 +27,7 @@ public class SynchronizationPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[.= 'Start'']")
+    @FindBy(xpath = "//*[.= 'Start']")
     public WebElement startBtn;
 
     @FindBy(xpath = "//*[@type='username']")
@@ -39,6 +39,8 @@ public class SynchronizationPage {
     @FindBy(xpath = "//*[@type='submit']")
     public WebElement submitBtn;
 
+    @FindBy(id = "flash")
+    public WebElement message;
 
 
 
