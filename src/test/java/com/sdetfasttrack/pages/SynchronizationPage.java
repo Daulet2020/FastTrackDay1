@@ -1,5 +1,10 @@
 package com.sdetfasttrack.pages;
 
+import com.sdetfasttrack.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class SynchronizationPage {
     //TC#1
     //1. Go to http://practice.cydeo.com/dynamic_loading/1
@@ -18,9 +23,26 @@ public class SynchronizationPage {
     //3. Assert : Message “Done” is displayed.
     //4. Assert : Image is displayed.
 
-public SynchronizationPage(){
+    public SynchronizationPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
+    @FindBy(xpath = "//*[.= 'Start'']")
+    public WebElement startBtn;
+
+    @FindBy(xpath = "//*[@type='username']")
+    public WebElement username;
+
+    @FindBy(xpath = "//*[@type='password']")
+    public WebElement password;
+
+    @FindBy(xpath = "//*[@type='submit']")
+    public WebElement submitBtn;
+
+
+
 
 
 }
 
-}
+
