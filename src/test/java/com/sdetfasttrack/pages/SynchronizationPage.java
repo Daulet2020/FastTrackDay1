@@ -42,6 +42,12 @@ public class SynchronizationPage {
     @FindBy(id = "flash")
     public WebElement message;
 
+    @FindBy(xpath = "//strong[.='Done!']")
+    public WebElement doneMsg;
+
+    @FindBy(xpath = "//*[@alt='square pants']")
+    public WebElement image;
+
 
 
 
