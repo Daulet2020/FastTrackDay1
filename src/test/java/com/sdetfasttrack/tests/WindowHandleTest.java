@@ -13,8 +13,6 @@ public class WindowHandleTest {
 
     @Test
     public void windowHandleTest() {
-
-
         //TC#4
         //1. Go to http://practice.cydeo.com/windows
         Driver.getDriver().get("http://practice.cydeo.com/windows");
